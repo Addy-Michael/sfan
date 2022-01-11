@@ -1,0 +1,361 @@
+:root {
+  --primary-color: #000a37;
+  --color-white: #ffffff;
+  --hero-overlay: #1a3749;
+  --color-light-blue: #0099ff;
+  --color-soft-blue: #eff6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.2;
+}
+
+/* utilities */
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.sea-blue {
+  color: var(--color-light-blue);
+}
+
+.white {
+  color: white;
+}
+
+.bg-sea-blue {
+  background: var(--color-light-blue);
+}
+
+.deep-blue {
+  color: var(--primary-color);
+}
+
+.bg-deep-blue {
+  background: var(--primary-color);
+}
+.bg-white {
+  background: var(--color-white);
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+.l-heading {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.m-heading {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.s-heading {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.py-3 {
+  padding: 10rem 0;
+}
+
+.pb-1 {
+  padding-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+}
+
+.my-1 {
+  margin-top: 1.5rem;
+}
+
+.my-2 {
+  margin-top: 2.5rem;
+}
+
+.m-quote {
+  margin: 1rem 3.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.pxy-2 {
+  padding: 1.5rem;
+}
+
+.pxy-3 {
+  padding: 3.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Navigation */
+header .header-container {
+  background: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+header .logo {
+  width: 25rem;
+  height: 5rem;
+  /* background: red; */
+}
+
+header .logo img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+header nav ul {
+  display: flex;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+header nav ul li {
+  color: var(--color-white);
+}
+
+header nav ul li a {
+  color: var(--color-white);
+  padding: 1rem;
+}
+
+header nav ul li a:hover {
+  background: black;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("/images/mikey-harris-kw0z6RyvC0s-unsplash.jpg") no-repeat
+    center center/cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(to right, var(--hero-overlay), transparent); */
+  background: var(--hero-overlay);
+  opacity: 0.7;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  /* background: green; */
+}
+
+.hero-content--items .s-heading {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: white;
+}
+
+.hero-content--items span {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 8rem;
+  font-weight: bolder;
+  color: var(--color-light-blue);
+}
+
+/* transformation */
+.trans-info {
+  background: var(--primary-color);
+}
+
+.trans-info p {
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.find {
+  background: var(--color-white);
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+/* youth */
+.youth {
+  background: #eee;
+  font-size: 2rem;
+}
+
+article div:first-child {
+  margin-right: 2rem;
+}
+
+.article {
+  display: flex;
+}
+
+.excerpt div h2 {
+  margin-top: 1rem;
+}
+
+.excerpt div:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.excerpt {
+  margin-left: 2rem;
+}
+
+.youth-content {
+  margin-right: 2rem;
+}
+
+.youth-content h4 {
+  margin-top: 2rem;
+}
+
+/* patnership */
+.patnership {
+  background: var(--color-white);
+  font-size: 2rem;
+}
+
+.patnership article div:first-child {
+  margin-right: 0;
+}
+
+.co-patnership {
+  background: var(--color-soft-blue);
+}
+
+.co-patnership .header {
+  margin-top: 2rem;
+}
+
+.patnership-list {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.patnership-list div div {
+  text-align: center;
+}
+
+.patnership-list img {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+}
+
+/* co-build */
+.co-patnership.build .patnership-list {
+  background: white;
+  display: block;
+  margin-top: 0;
+}
+
+.stats {
+  width: 100%;
+  height: 100%;
+}
+
+.stats img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ceo */
+.ceo {
+  background: var(--primary-color);
+  font-size: 2rem;
+  padding: 15rem;
+}
+
+.ceo .ceo-content {
+  display: flex;
+}
+
+.ceo .ceo-content article {
+  width: 50%;
+}
+
+.ceo .ceo-content article p {
+  margin: 2rem 0;
+}
+
+.ceo .ceo-content .img-contain {
+  width: 50%;
+  height: 100%;
+}
+
+.ceo .ceo-content .img-contain img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* clients */
+.clients {
+  background: #eee;
+}
+
+.clients .clients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
