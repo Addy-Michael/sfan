@@ -8,6 +8,12 @@
       name="description"
       content="SFAN is unlocking the potential of Africa's young geniuses by helping them turn their passion into businesses and fulfilling careers."
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./main.css" />
     <title>Sefan</title>
   </head>
@@ -379,24 +385,30 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer py-3">
       <div class="container">
         <div class="footer-list">
           <form>
-            <h1 class="m-heading">Get in touch</h1>
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <h1 class="l-heading sea-blue">Get in touch</h1>
+            <input
+              class="first"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
             <input type="email" name="email" id="email" placeholder="Email" />
             <textarea
               name="comment"
               id="comment"
               placeholder="Comment"
             ></textarea>
-            <input type="submit" value="CONTACT US NOW" />
+            <input class="submit" type="submit" value="CONTACT US NOW" />
           </form>
 
           <div>
-            <h1 class="m-heading">Quick Links</h1>
-            <div class="link-group">
+            <h1 class="l-heading sea-blue">Quick Links</h1>
+            <div class="link-group first">
               <ul>
                 <li><a href="#">Venture Studio</a></li>
                 <li><a href="#">ReadyforWork</a></li>
@@ -412,24 +424,30 @@
             </div>
           </div>
 
-          <div>
+          <div class="company-info">
             <div><img src="/images/sfan-light.png" alt="sfan-light" /></div>
-            <p>
+            <p class="first">
               SFAN is unlocking the potential of Africa's young geniuses by
               helping them turn their passion into businesses and fulfilling
               careers.
             </p>
             <ul>
               <li>
-                <span>logo</span
+                <span><i class="fas fa-location-arrow"></i></span
                 ><a href="#"> King Solomon's Height, 26, Mango St, Accra</a>
               </li>
-              <li><span>logo</span><a href="#">030 280 2935</a></li>
-              <li><span>logo</span><a href="#">info@sfanonline.org</a></li>
+              <li>
+                <span><i class="fas fa-phone"></i></span
+                ><a href="#">030 280 2935</a>
+              </li>
+              <li>
+                <span><i class="fas fa-envelope-open-text"></i></span
+                ><a href="#">info@sfanonline.org</a>
+              </li>
             </ul>
           </div>
         </div>
-        <p>Copyright© 2022 Stars From All Nations Ltd</p>
+        <p class="copy">Copyright© 2022 Stars From All Nations Ltd</p>
       </div>
     </footer>
   </body>
