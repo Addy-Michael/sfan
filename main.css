@@ -128,6 +128,40 @@ a {
   text-decoration: none;
 }
 
+.drop-down {
+  position: relative;
+  cursor: pointer;
+}
+
+.drop-down--list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 15rem;
+  z-index: 3;
+  background: var(--primary-color);
+}
+
+.drop-down:hover .drop-down--list {
+  display: flex;
+}
+
+.drop-down--list li {
+  width: 100%;
+}
+
+.drop-down--list li a {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+}
+
+.drop-down--list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -174,6 +208,7 @@ header nav ul li a:hover {
   width: 100%;
   background: url("/images/mikey-harris-kw0z6RyvC0s-unsplash.jpg") no-repeat
     center center/cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
 }
@@ -467,6 +502,26 @@ textarea {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+
+.footer .social-list {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer .social-list li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer .social-list a {
+  color: var(--color-light-blue);
+  transition: all 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.footer .social-list a:hover {
+  font-size: 2rem;
 }
 
 .footer .copy {
