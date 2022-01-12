@@ -295,6 +295,17 @@ article div:first-child {
 
 .youth-content {
   margin-right: 2rem;
+  position: relative;
+}
+
+.youth-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  height: 100%;
+  width: 0.4rem;
+  background: var(--primary-color);
 }
 
 .youth-content h4 {
